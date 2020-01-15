@@ -1,0 +1,156 @@
+.betting{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    h3{
+        height: 60px;
+        width: 100%;
+        background: #fff;
+        margin: 0;
+        color: #7f7f7f;
+        line-height: 60px;
+        box-sizing: border-box;
+        padding-left: 15px;
+    }
+    .compont{
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        .compont-view{
+            flex: 1;
+            height: 100%;
+            width: 100%;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            overflow:-Scroll;
+        }
+        .compont-view::-webkit-scrollbar {display:none}
+        .dataView{
+            min-width: 1000px;
+            height: 100px;
+            box-sizing: border-box;
+            padding: 10px 15px;
+            background: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 20px;
+            .dataView-input{
+                margin-right: 10px;
+            }
+        }
+        .tableView{
+            flex: 1 1;
+            background-color: #fff;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            overflow: auto;
+            .table-header{
+                min-height: 60px;
+                max-height: 60px;
+                width: 100%;
+                background: #fafafa;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                div{
+                    box-sizing: border-box;
+                    border-right: 1px solid #ccc;
+                    font-weight: 700;
+                }
+                div:last-of-type{
+                    border-right: 0px solid #77a2bb;
+                }
+            }
+            .table-content{
+                flex: auto;
+                // overflow: hidden;
+                .table-tr{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid #cccccc;
+                    padding: 5px 0;
+                }
+                .table-tr:hover{
+                    background-color: #fafafa;
+                }
+            }
+            .orderNo{
+                width: 12%;
+            }
+            .memberAccount{
+                width: 6%;
+            }
+            .contents{
+                flex: 1;
+                p{
+                    width: 100%;
+                    word-wrap: break-word;
+                    word-break: normal;
+                }
+            }
+            .butns{
+                width: 10%;
+            }
+        }
+        .scrollBarStyle {
+            &::-webkit-scrollbar {
+                /*滚动条整体样式*/
+                width: 10px;
+                /*高宽分别对应横竖滚动条的尺寸*/
+                height: 4px;
+            }
+        
+            &::-webkit-scrollbar-thumb {
+                /*滚动条里面小方块*/
+                border-radius: 50px;
+                box-shadow: inset 0 0 0 4px #ccc;
+                border: 2px solid transparent;
+            }
+        
+            &::-webkit-scrollbar-track {
+                /*滚动条里面轨道*/
+                display: block;
+                background: rgba(0, 0, 0, .1);
+            }
+        
+            &::-webkit-scrollbar-button {
+                width: 0px;
+                height: 0px;
+            }
+        }
+    }
+    .paginView{
+        height: 40px;
+        width: 100%;
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 5px 10px;
+    }
+    .red{
+        color: red !important;
+        font-weight: 500 !important;
+    }
+    .blue{
+        color: blue !important;
+        font-weight: 600 !important;
+    }
+    .noTbale{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 1px solid #f1f1f1;
+        p{
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,324 @@
+.score{
+    user-select:none;
+    .match{
+        height: 32px;
+        width: 100px;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        
+        margin-right: 20px;
+        position: relative;
+        .matchPoput{
+            position: absolute;
+            top: 32px;
+            left: 0;
+            width: 720px;
+            height: 420px;
+            border: 1px solid #d9d9d9;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            border-radius: 3px;
+            .checkboxAll{
+                height: 40px;
+                background-color: #85b4d0;
+                box-sizing: border-box;
+                padding: 5px 20px;
+                div{
+                    color: #fff;
+                    width: 60px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            }
+            .checkboxList{
+                height: 334px;
+                width: 100%;
+                overflow: auto;
+                box-sizing: border-box;
+                padding: 5px 10px;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                .checkboxView{
+                    // float: left;
+                    width: 32%;
+                    height: 30px;
+                    color: #85b4d0;
+                    line-height: 30px;
+                    box-sizing: border-box;
+                    padding: 0 5px;
+                    border-radius: 3px;
+                    margin-bottom: 5px;
+                    background: rgba($color: #85b4d0, $alpha: 0.1) ;
+                }
+                .checkboxView:hover{
+                    cursor: pointer;
+                    // background-color: #85b4d0 !important;
+                    // color: #fff;
+                }
+                .checkboxView-active{
+                    // background-color: #85b4d0 !important;
+                    background: rgba($color: #85b4d0, $alpha: 0.7) !important;
+                    color: #fff !important;
+                }
+                .noMatch{
+                    text-align: center;
+                }
+            }
+            .checkboxBut{
+                height: 44px;
+                width: 100%;
+                background-color: #fafafa;
+                // border-top: 1px solid #d9d9d9;
+                box-sizing: border-box;
+                padding: 5px 20px;
+                display: flex;
+                flex-direction: row-reverse;
+    
+            }
+        }
+        .matchView{
+            height: 32px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+
+    }
+    .match:hover{
+        cursor: pointer;
+        border-color: #1890ff;
+    }
+    .scrollBarStyle {
+        &::-webkit-scrollbar {
+            /*滚动条整体样式*/
+            width: 10px;
+            /*高宽分别对应横竖滚动条的尺寸*/
+            height: 4px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            /*滚动条里面小方块*/
+            border-radius: 50px;
+            box-shadow: inset 0 0 0 4px #ccc;
+            border: 2px solid transparent;
+        }
+    
+        &::-webkit-scrollbar-track {
+            /*滚动条里面轨道*/
+            display: block;
+            background: rgba(0, 0, 0, .1);
+        }
+    
+        &::-webkit-scrollbar-button {
+            width: 0px;
+            height: 0px;
+        }
+    }
+    .tableView{
+        .tableList{
+            box-sizing: border-box;
+            padding: 0 0%;
+            
+            .matchName{
+                width: 100%;
+                overflow: auto;
+                box-sizing: border-box;
+                
+                border: 1px solid #85b4d0;
+                border-bottom: 0px solid #85b4d0;
+                cursor: pointer;
+                .matchName-header{
+                    height: 38px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    box-sizing: border-box;
+                    
+                    background: rgba($color: #85b4d0, $alpha: 0.5);
+                    border-bottom: 1px solid #fff;
+                    font-weight: 600;
+                    .names{
+                        flex: 1;
+                        padding-left: 30px;
+                        box-sizing: border-box;
+                    }
+                    .court{
+                        display: flex;
+                        width: 50%;
+                        .FT{
+                            text-align: center;
+                            width: 50%;
+                        }
+                        .BK{
+                            text-align: center;
+                            width: 33.3333%;
+                        }
+                       
+                    }
+                }
+                .matchName-dilt{
+                    overflow: auto;
+                    width: 100%;
+                    .matchNameDilt-list{
+                        min-height: 35px;
+                        width: 100%;
+                        overflow: auto;
+                        .matchIdDilt{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            border-bottom: 1px solid #85b4d0;
+                            .timeName{
+                                flex: 1;
+                                display: flex;
+                                align-items: center;
+                                border-right: 1px solid #85b4d0;
+                                .times{
+                                    width: 75px;
+                                    padding:  10px;
+                                    box-sizing: border-box;
+                                    background-color: #edf1f5;
+                                    margin-right: 10px;
+                                    font-weight: 600;
+                                }
+                            }
+                            .court{
+                                height: 100%;
+                                width: 50%;
+                                display: flex;                               
+                                .FT{
+                                    text-align: center;
+                                    width: 50%;
+                                }
+                                .BK{
+                                    text-align: center;
+                                    width: 33.3333%;
+                                }
+                            }
+                        }
+                        .matchIdDilt-list{
+                            .matchIdDilt-view{
+                                min-height: 32px;
+                                overflow: auto;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                border-bottom: 1px solid #85b4d0;
+                                // text-align: center;
+                                div{
+                                    width: 50%;
+                                    min-height: 32px;
+                                    padding-left: 80px;
+                                    box-sizing: border-box;
+                                    // border-right: 1px solid #c6ddeb;
+                                    line-height: 32px;
+                                }
+                                div:last-of-type{
+                                    padding:0 10px;
+                                    border-left: 1px solid #c6ddeb;
+                                }
+                            }
+                            .matchIdDilt-view:hover{
+                                background-color: #e5e6e7;
+                            }
+                            .matchIdDilt-BK{
+                                flex-direction: column;
+                                .BK-Section{
+                                    display: flex;
+                                    width: 100%;
+                                    padding: 0;
+                                    border: 0;
+                                    box-sizing: border-box;
+                                    border-bottom: 1px solid #c6ddeb;
+                                    .BK-Section-left{
+                                        width: 50%;
+                                        box-sizing: border-box;
+                                        padding-left: 85px;
+                                        border: 0;
+                                        div{
+                                            padding: 0 10px;
+                                            width: 100%;
+                                            box-sizing: border-box;
+                                            border-left: 1px solid #c6ddeb;
+                                            border-right: 1px solid #c6ddeb;
+                                        }
+
+                                    }
+                                    .BK-Section-right{
+                                        width: 50%;
+                                        display: flex;
+                                        padding:0;
+                                        border: 0;
+                                        div{
+                                            width: 20%;
+                                            padding:0;
+                                            border: 0;
+                                            text-align: center;
+                                            p{
+                                                margin: 0;
+                                                padding: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                    .matchNameDilt-list:last-of-type{
+                        border-bottom: 0px solid #85b4d0;
+                    }
+                }
+            }
+        }
+    }
+    .weekDay{
+        display: flex;
+        width: 385px;
+        justify-content: space-around;
+        margin-right: 20px;
+        div{
+            width: 14.25%;
+            text-align: center;
+            height: 32px;
+            background: rgba($color: #77a2bb, $alpha: 0.5);
+            border-right: 1px solid #fff;
+            color: #fff;
+            .week{
+                height: 18px;
+                font-size: 600;
+            }
+            .day{
+                height: 14px;
+                font-size: 10px;
+                line-height: 14px;
+            }
+        }
+        .weekActive{
+            background: rgba($color: #77a2bb, $alpha: 1) !important;
+        }
+        div:hover{
+            background: rgba($color: #77a2bb, $alpha: 0.1);
+            color: #77a2bb;
+            cursor: pointer;
+        }
+        div:last-of-type{
+            .week{
+                height: 32px;
+                line-height: 32px;
+                font-size: 600;
+            }
+        }
+        .weekActive:hover{
+            background: rgba($color: #77a2bb, $alpha: 1) !important;
+            color: #fff;
+        }
+    }
+
+}

@@ -1,0 +1,149 @@
+._table{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    h3{
+        height: 60px;
+        width: 100%;
+        background: #fff;
+        margin: 0;
+        color: #7f7f7f;
+        line-height: 60px;
+        box-sizing: border-box;
+        padding-left: 15px;
+    }
+    .compont{
+        flex: 1;
+        box-sizing: border-box;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        
+        .fromView{
+            height: 80px;
+            width: 100%;
+            padding-left: 20px;
+            background-color: #fff;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-bottom: 20px;
+            .fromData{
+                margin-right: 20px;
+            }
+        }
+        .tableView{
+            flex: 1;
+            background-color: #fff;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            .tableHeader{
+                height: 40px;
+                min-height: 40px;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #fafafa;
+                span{
+                    width: 12%;
+                    text-align: center;
+                    box-sizing: border-box;
+                    border-right: 1px solid #ccc;
+                    font-weight: 700;
+                }
+                span:last-of-type{
+                    flex: 1;
+                    border-right: 0px solid #ccc;
+                }
+            }
+            .tableContent{
+                flex: 1;
+                .tableList{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    border-bottom: 1px solid #f1f1f1;
+                    height: 40px;
+                    div{
+                        height: 40px;
+                        width: 12%;
+                        text-align: center;
+                        line-height: 40px;
+                    }
+                    div:last-of-type{
+                        flex: 1;
+                    }
+                }
+                .tableList:hover{
+                    background-color: #fafafa;
+                    cursor: pointer;
+                }
+            }
+            .noTbale{
+                height: 200px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                border-bottom: 1px solid #f1f1f1;
+                p{
+                    font-size: 16px;
+                }
+            }
+            
+        }
+        .Pagination{
+            background-color: #fff;
+            height: 40px;
+            border-bottom: 1px solid #f1f1f1;
+            align-items: center;
+            box-sizing: border-box;
+            padding-top: 8px;
+            padding-left: 10px;
+        }
+        
+        
+    }
+    .timeInout{
+        width: 150px;
+        height: 32px;
+        box-sizing: border-box;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        margin-right: 20px;
+    }
+    .timeInout::-webkit-inner-spin-button { visibility: hidden; }
+
+    .scrollBarStyle {
+        &::-webkit-scrollbar {
+            /*滚动条整体样式*/
+            width: 10px;
+            /*高宽分别对应横竖滚动条的尺寸*/
+            height: 4px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            /*滚动条里面小方块*/
+            border-radius: 50px;
+            box-shadow: inset 0 0 0 4px #ccc;
+            border: 2px solid transparent;
+        }
+    
+        &::-webkit-scrollbar-track {
+            /*滚动条里面轨道*/
+            display: block;
+            background: rgba(0, 0, 0, .1);
+        }
+    
+        &::-webkit-scrollbar-button {
+            width: 0px;
+            height: 0px;
+        }
+    }
+    
+}

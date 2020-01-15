@@ -1,0 +1,143 @@
+.capital{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    h3{
+        height: 60px;
+        width: 100%;
+        background: #fff;
+        margin: 0;
+        color: #7f7f7f;
+        line-height: 60px;
+        box-sizing: border-box;
+        padding-left: 15px;
+    }
+    .compont{
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        .viewx{
+            flex: 1;
+            height: 100%;
+            width: 100%;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            overflow:-Scroll;
+            .formView{
+                display: flex;
+                flex-direction: column;
+                height: 120px;
+                box-sizing: border-box;
+                padding: 20px;
+                background-color: #fff;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+                .formView-div{
+                    height: 40px;
+                }
+                .dataView-input{
+                    margin-right: 10px;
+                }
+           }
+           .tableView{
+               flex: 1;
+               background-color: #fff;
+               box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                overflow: auto;
+               .tableHeader{
+                   height: 40px;
+                   min-height: 40px;
+                   background-color: #fafafa;
+                   display: flex;
+                   justify-content: space-around;
+                   align-items: center;
+                   text-align: center;
+                   div{
+                       font-weight: 700;
+                       width: 12%;
+                       border-right: 1px solid #ccc;
+                   }
+                   .remarks{
+                       flex: 1;
+                   }
+                   div:last-of-type{
+                        border-right: 0px solid #77a2bb;
+                    }
+               }
+               .tableContent{
+                   .table-tr{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        text-align: center;
+                        div{
+                            width: 12%;
+                            min-height: 40px;
+                            border-bottom: 1px solid #fafafa;
+                            line-height: 40px;
+                        }
+                        .remarks{
+                            flex: 1;
+                        }
+                   }
+                   .table-tr:hover{
+                        background-color: #f2f2f2;
+                        cursor: pointer;
+                   }
+               }
+           }
+           
+        }
+    }
+    .paginView{
+        height: 40px;
+        width: 100%;
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 5px 10px;
+    }
+    .noTbale{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 1px solid #f1f1f1;
+        p{
+            font-size: 16px;
+        }
+    }
+    .scrollBarStyle {
+        &::-webkit-scrollbar {
+            /*滚动条整体样式*/
+            width: 10px;
+            /*高宽分别对应横竖滚动条的尺寸*/
+            height: 4px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            /*滚动条里面小方块*/
+            border-radius: 50px;
+            box-shadow: inset 0 0 0 4px #ccc;
+            border: 2px solid transparent;
+        }
+    
+        &::-webkit-scrollbar-track {
+            /*滚动条里面轨道*/
+            display: block;
+            background: rgba(0, 0, 0, .1);
+        }
+    
+        &::-webkit-scrollbar-button {
+            width: 0px;
+            height: 0px;
+        }
+    }
+}

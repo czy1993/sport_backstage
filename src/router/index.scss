@@ -1,0 +1,16 @@
+.content{
+    // position: absolute;
+    // top: 60px;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    background: #edf1f5;
+    display: flex;
+    justify-content: left;
+    flex-direction:row;
+    flex: 1;
+    overflow: hidden;
+    .conter{
+        flex: 1;
+    }
+}
